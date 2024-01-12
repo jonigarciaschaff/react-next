@@ -114,28 +114,28 @@ export default function Html() {
         <b>Images:</b>
         <Image src="/html.jpeg" alt="html" width="600" height="600" />
       </p>
-      <p>
+      <div>
         <b>Order List:</b>
         <ol>
           <li>First</li>
           <li>Second</li>
         </ol>
-      </p>
-      <p>
+      </div>
+      <div>
         <b>Unorder List:</b>
         <ul>
           <li>Dog</li>
           <li>Cat</li>
         </ul>
-      </p>
-      <p>
+      </div>
+      <div>
         <b>Pre formatted text:</b>
         <pre>testing s</pre>
-      </p>
-      <p>
+      </div>
+      <div>
         <b>Horizontal rule</b>
         <hr />
-      </p>
+      </div>
       <p>
         <b>Emphasis</b> <br />
         <em>You need to study</em>
@@ -197,6 +197,171 @@ export default function Html() {
           <input type="submit" value="Subscribe!" />
         </div>
       </form>
+      <br />
+      <div>
+        <b>Accessibility:</b>
+        <div>
+          <u>Document structural information</u>
+          <div role="banner">
+            <h1>
+              <b>role="banner"</b>This is a banner
+            </h1>
+          </div>
+          <section role="list">
+            <b>role="list"</b>
+            <div role="listitem">
+              <b>role="listitem"</b>First item
+            </div>
+            <div role="listitem">
+              <b>role="listitem"</b>Second item
+            </div>
+          </section>
+        </div>
+        <div>
+          <u>Document structural information</u>
+          <div role="button">
+            <b>role="button"</b>This is a button
+          </div>
+        </div>
+
+        <br />
+
+        <u>Dialog, alerts:</u>
+        <div
+          role="dialog"
+          aria-labelledby="title"
+          style={{ border: "1px red solid" }}
+        >
+          <h2 id="title">Successfully saved changes</h2>
+          <button>Dismiss</button>
+        </div>
+
+        <br />
+
+        <u>Dinamic content changes:</u>
+        <ol role="log">
+          <b>role="log"</b>
+          <li>Chat message 1</li>
+          <li>Chat message 2</li>
+        </ol>
+
+        <br />
+
+        <u>Dinamic content and importance:</u>
+        <div aria-live="off">
+          <b>aria-live="off":</b> Don't announce changes
+        </div>
+        <div aria-live="polite">
+          <b>aria-live="polite":</b>Announce changes when idle
+        </div>
+        <div aria-live="assertive">
+          <b>aria-live="assertive":</b>Announce changes ASAP
+        </div>
+
+        <br />
+
+        <u>Aria Properties:</u>
+        <div aria-label="This is label">
+          <b>aria-label:</b> Label not visible on UI
+        </div>
+        <div aria-labelledby="subtitle">
+          <b id="subtitle">aria-aria-labelledby:</b>Another element as a label,
+          passed by ID
+        </div>
+        <div aria-description="This is a aria description">
+          <b>aria-description:</b>More detail than labels
+        </div>
+        <div aria-describedby="description">
+          <b id="description">aria-describedby:</b>Another element as a
+          description, passed by ID
+        </div>
+
+        <br />
+
+        <u>Aria States:</u>
+        <div aria-checked="true">
+          <b>aria-checked:</b> Checkbox state
+        </div>
+        <div aria-disabled="false">
+          <b>aria-disabled:</b>Element is disabled
+        </div>
+        <div aria-expanded="true">
+          <b>aria-expanded:</b>Expanded or collapsed element
+        </div>
+        <div aria-hidden="false">
+          <b>aria-hidden:</b>Not visible on the page
+        </div>
+        <div aria-pressed="false">
+          <b>aria-pressed:</b>Toggle currently "pressed"
+        </div>
+        <div aria-selected="false">
+          <b>aria-selected:</b>Element is selected
+        </div>
+      </div>
+      <br />
+      <div>
+        <b>Meta Tags</b>
+        <br />
+        <p>
+          <b>
+            <code>{"<meta charset='utf-8' />"}</code>:
+          </b>{" "}
+          Character encoding
+        </p>
+        <p>
+          <b>
+            <code>
+              {"<meta name='viewport' content='width=device-width' />"}
+            </code>
+            :
+          </b>{" "}
+          Indicate the web size Character encoding
+        </p>
+        <p>
+          <b>
+            <code>
+              {
+                "<meta name='viewport' content='width=device-width, initial-scale=1' />"
+              }
+            </code>
+            :
+          </b>{" "}
+          width indicate the web size and initial-scale is to don't try to zoom
+          in.
+        </p>
+        <p>
+          <b>
+            <code>{"<meta name='author' content='Jonatan' />"}</code>:
+          </b>{" "}
+          This indicate the author
+        </p>
+        <p>
+          <b>
+            <code>
+              {"<meta name='description' content='This is a capacitation' />"}
+            </code>
+            :
+          </b>{" "}
+          Web description
+        </p>
+
+        <p>
+          <b>
+            <code>{"<link rel='icon' href='icon.png' />"}</code>:
+          </b>{" "}
+          It is used to specify the icon for a web page
+        </p>
+        <p>
+          <b>
+            <code>{"<base href='https://jonatangarciaschaff.com'/>"}</code>:
+          </b>{" "}
+          This tag will be used as a prefix for all those relative URLs for
+          example:
+          <br />
+          <code>{"<a href='/content'/>"}</code> will redirect to{" "}
+          <u>https://jonatangarciaschaff.com/content</u>
+        </p>
+      </div>
     </>
   );
 }

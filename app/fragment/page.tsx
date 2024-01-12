@@ -7,8 +7,7 @@ export default function Fragment() {
       <Header>React.Fragment</Header>
       <div>
         <React.Fragment key={1}>
-          Esto es lo mismo que usar <code>{"<></>"}</code> pero se le puede
-          poner una key
+          This is the same as using <code>{"<></>"}</code> but you can put a key
         </React.Fragment>
       </div>
     </>

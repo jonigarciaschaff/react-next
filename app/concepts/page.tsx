@@ -7,31 +7,21 @@ export default function concepts() {
       <Header>Conceptos generales</Header>
       <div>
         <p className="mb-4">
-          <b>React:</b>React es una libreria declarativa, basada en componentes
-          y unidireccional, el flujo de datos va del padre al hijo. Además,
-          utiliza un virtual dom, una copia del dom guardada en memoria que
-          utiliza para comparar que node hay que actualizar y no tener que
-          renderizar toda la web.
+          <b>React:</b>React is a declarative, component-based library. and
+          unidirectional, the data flow goes from parent to child. Besides, uses
+          a virtual dom, a copy of the dom stored in memory that used to compare
+          which node should be updated and not have to render the entire web.
         </p>
         <p className="mb-4">
-          <b>POO:</b>
-          polimorfismo, abstracción, encapsulamiento, herencia
-        </p>
-        <p className="mb-4">
-          <b>SAAS:</b>
-          software as a service, usar un servicio en el navegador sin necesidad
-          de descargar ningún software
-        </p>
-        <p className="mb-4">
-          <b>Declarativo:</b>
+          <b>Declarative:</b>
           <code style={{ color: "green" }}>
-            {"<span>Esto es declarativo</span>"}
+            {"<span>This is declarative</span>"}
           </code>
         </p>
         <p className="mb-4">
-          <b>Imperativo:</b>
+          <b>Imperative:</b>
           <code style={{ color: "green" }}>
-            {"React.createElement('h1', {id: '1'}, 'Hola mundo')"}
+            {"React.createElement('h1', {id: '1'}, 'Hello world')"}
           </code>
         </p>
       </div>

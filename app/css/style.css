@@ -1,0 +1,141 @@
+.title {
+  text-align: center;
+  color: cadetblue;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.paragraph {
+  background-color: darkolivegreen;
+  color: aliceblue;
+  min-height: 100px;
+  font-size: 1.25rem;
+  width: 30%;
+}
+
+h3,
+h4,
+.class-1 {
+  color: blueviolet;
+}
+
+#element-1 {
+  color: chocolate;
+}
+
+* {
+  font-size: 16px;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* ^ = caret // this mean that includes all the sub pages */
+a[href^="https://jonatangarcia.com"]
+{
+  color: orange;
+}
+
+a[href="https://jonatangarciaschaff.com"]
+{
+  color: crimson;
+}
+
+/* inside of the footer */
+footer p {
+  font-size: 25px;
+}
+
+/* directly inside of the footer, only first level */
+footer > span {
+  text-decoration: line-through;
+}
+
+/* if .dog has the same level than .cat, we apply the css */
+.cat ~ .dog {
+  color: coral;
+}
+
+/* we apply the css only if the .horse is after the .bird  */
+.bird + .horse {
+  color: aquamarine;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+/* Pseudo classes */
+.anchor:link {
+  color: darkgoldenrod;
+}
+
+.anchor:visited {
+  color: greenyellow;
+}
+
+input {
+  border: solid 1px black;
+}
+
+input:focus {
+  outline: 2px solid blue;
+}
+
+/* we apply the css only the input is invalid and it is not focused  */
+input:invalid:not(:focus) {
+  outline: 2px solid red;
+}
+
+/* we apply the css only the input is first of type inside of a element  */
+.span-1:first-of-type {
+  color: blueviolet;
+}
+
+.span-1:last-of-type {
+  color: peru;
+}
+
+/* we apply the css only the span is the second of their type  */
+.span-2:nth-of-type(2) {
+  font-size: 25px;
+}
+
+.span-2:nth-of-type(odd) {
+  text-decoration: overline;
+}
+
+.span-2:nth-of-type(even) {
+  text-decoration: underline;
+}
+
+.span-3:first-child {
+  color: purple;
+}
+
+.span-3:last-child {
+  color: transparent;
+}
+
+/* we apply the css only the div is even between their siblings regardless the type */
+.div-1:nth-child(even) {
+  font-size: 10px;
+}
+
+.div-2::first-letter {
+  color: red;
+}
+
+.div-3::first-line {
+  color: blue;
+}
+
+.div-4::before {
+  content: "-";
+}
+
+.div-5::after {
+  content: "!";
+}

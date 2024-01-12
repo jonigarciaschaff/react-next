@@ -17,6 +17,11 @@ export default function Home() {
           </Link>
         </li>
         <li>
+          <Link href="/css" className="text-blue-500">
+            * CSS
+          </Link>
+        </li>
+        <li>
           <Link href="/use-state" className="text-blue-500">
             * useState
           </Link>
@@ -28,7 +33,7 @@ export default function Home() {
         </li>
         <li>
           <Link href="/component-class" className="text-blue-500">
-            * Componentes based on classes
+            * Class-based components.
           </Link>
         </li>
         <li>

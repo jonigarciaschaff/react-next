@@ -12,25 +12,24 @@ class HelloWorld extends Component {
   }
 
   componentDidMount() {
-    console.log("Se montó el componente");
-    // Ideal para realizar operaciones después de que el componente ha sido insertado en el DOM
+    console.log("The component was mounted");
+    // Ideal for performing operations after the component has been inserted into the DOM
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log("El componente se actualizó");
-    // Se llama después de que el componente se haya actualizado, tanto por cambios de estado como por cambios de propiedades
-    console.log("Estado previo:", prevState);
-    console.log("Estado actual:", this.state);
+    console.log("The component was updated");
+    // Called after the component has been updated, both for state changes and property changes    console.log("prev state:", prevState);
+    console.log("current state:", this.state);
   }
 
   componentWillUnmount() {
-    console.log("Se desmontará el componente");
-    // Se llama justo antes de que el componente sea eliminado del DOM
+    console.log("The component will be unmounted");
+    // Called just before the component is removed from the DOM
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    console.log("Se verificará si el componente debe actualizarse");
-    // Retorna true si el componente debe actualizarse, y false si no
+    console.log("It will check if the component needs to be updated");
+    // Returns true if the component should be updated, and false if not
     return nextState.count !== this.state.count;
   }
 
@@ -44,11 +43,11 @@ class HelloWorld extends Component {
   render() {
     return (
       <>
-        <Header>Componente basado en class</Header>
-        <h1>Este es un componente basado en clases</h1>
+        <Header>Class-based component</Header>
+        <h1>This is a class based component.</h1>
         <div>
-          <p>Contador: {this.state.count}</p>
-          <button onClick={this.handleIncrement}>Incrementar</button>
+          <p>Counter: {this.state.count}</p>
+          <button onClick={this.handleIncrement}>Increment</button>
         </div>
       </>
     );

@@ -12,11 +12,9 @@ export default function UseReducer() {
       <Header>useReducer</Header>
       <p>counter: {state.count} </p>
       <button onClick={() => dispatch({ type: "increment" })}>
-        Incrementar
+        Increment
       </button>{" "}
-      <button onClick={() => dispatch({ type: "decrement" })}>
-        Decrementar
-      </button>
+      <button onClick={() => dispatch({ type: "decrement" })}>Decrement</button>
     </>
   );
 }

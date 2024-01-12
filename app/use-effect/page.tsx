@@ -6,11 +6,11 @@ import { useEffect, useLayoutEffect } from "react";
 
 export default function UseEffect() {
   useEffect(() => {
-    console.log("usando useEffect async");
+    console.log("using useEffect async");
   }, []);
 
   useLayoutEffect(() => {
-    console.log("usando useLayoutEffect sync");
+    console.log("using useLayoutEffect sync");
   }, []);
 
   return (
@@ -18,18 +18,17 @@ export default function UseEffect() {
       <Header>useEffect</Header>
       <div>
         <p>
-          <b>useEffect: </b> Se ejecuta después de que la renderización se ha
-          completado y no bloquea la pintura en pantalla. Es adecuado para
-          operaciones que no necesitan ejecutarse de inmediato y pueden ocurrir
-          de manera asíncrona.
+          <b>useEffect: </b> Runs after rendering has finished completed and
+          does not block the painting on the screen. It is suitable for
+          operations that do not need to be executed immediately and can occur
+          asynchronously.
         </p>
         <p>
           <b>useLayoutEffect: </b>
-          Se ejecuta de manera síncrona después de todas las mutaciones del DOM.
-          Es útil cuando necesitas realizar operaciones que afectarán al diseño
-          antes de que el navegador repinte. Puede bloquear la interfaz de
-          usuario, por lo que debes usarlo con precaución y solo cuando sea
-          necesario.
+          It runs synchronously after all DOM mutations. It is useful when you
+          need to perform operations that will affect the design before the
+          browser repaints. You can block the interface user, so you should use
+          it with caution and only when necessary. necessary.
         </p>
       </div>
     </>
