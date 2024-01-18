@@ -30,17 +30,20 @@ export default function Css() {
       </div>
       <div>
         <h2 className="title">basic concepts</h2>
-        <h3>This is a {"<h3>"}</h3>
-        <h4>This is a {"<h4>"}</h4>
-        <div className="class-1">class-1</div>
-        <div id="element-1">element-1</div>
+        <h3>By element {"<h3>"}</h3>
+        <h4>By element {"<h4>"}</h4>
+        <div className="class-1">By class</div>
+        <div id="element-1">By ID</div>
         <div>
           <a href="https://jonatangarcia.com/content">
-            Jonatan Garcia {"-->"} content
+            by attribute href^: Jonatan Garcia {"-->"} content
           </a>
         </div>
         <div>
-          <a href="https://jonatangarciaschaff.com">Jonatan Garcia Schaff</a>
+          <a href="https://jonatangarciaschaff.com">
+            {" "}
+            by attribute href: Jonatan Garcia Schaff
+          </a>
         </div>
         <div>
           <a href="https://google.com ">Google</a>
@@ -48,29 +51,66 @@ export default function Css() {
         <p className="paragraph">This is a paragraph</p>
       </div>
       <footer>
-        <p>This is a paragraph in the footer</p>
+        <p>
+          This is a paragraph in the footer <code>footer p</code>
+        </p>
         <div>
           This is a div in the footer
           <p>Another paragraph in the footer</p>
         </div>
-        <span>This is a span in the footer</span>
+        <span>
+          This is a span in the footer: <code>{"footer > span"}</code>
+        </span>
         <div>
           <span>Another span in the footer</span>
         </div>
         <br />
         <div>
           <div className="cat">Cat 1</div>
-          <div className="dog">Dog 1</div>
-          <div className="dog">Dog 2</div>
+          <div className="dog">
+            Dog 1 <code>.cat ~ .dog</code>
+          </div>
+          <div className="dog">
+            Dog 2 <code>.cat ~ .dog</code>
+          </div>
         </div>
         <br />
         <div>
           <div className="horse">Horse 1</div>
           <div className="bird">Bird 1</div>
-          <div className="horse">Horse 2</div>
+          <div className="horse">
+            Horse 2 <code>.bird + .horse</code>
+          </div>
           <div className="horse">Horse 3</div>
         </div>
+        <br />
+        <div>
+          <div style={{ display: "inline" }}>inline </div>
+          <div style={{ display: "inline" }}>inline </div>
+          <div style={{ display: "inline" }}>inline </div>
+          <div style={{ display: "inline" }}>inline </div>
+          <div style={{ display: "block" }}>block </div>
+          <div style={{ display: "block" }}>block </div>
+          <div style={{ display: "block" }}>block </div>
+        </div>
       </footer>
+      <br />
+      <div style={{ boxSizing: "content-box" }}>
+        <b>
+          <code>{"box-sizing: content-box"}</code> <i>(default)</i>
+        </b>
+      </div>
+      <div style={{ boxSizing: "border-box" }}>
+        <b>
+          <code>{"box-sizing: border-box"}</code>
+        </b>
+      </div>
+      <br />
+      <div>
+        <div className="floatLeft">floatLeft</div>
+        <div className="floatRight">floatRight</div>
+        <div className="clear">clear</div>
+      </div>
       <div>
         <h2 className="title">Pseudo Classes</h2>
         <a className="anchor" href="https://google.com">
@@ -116,6 +156,61 @@ export default function Css() {
           <div className="div-4">Third</div>
           <div className="div-5">fourth</div>
         </div>
+      </div>
+      <div>
+        <h2 className="title">Selector Specificity</h2>
+        <ul>
+          <li>
+            <b>- Inline style</b>: apply css direrctly into the HTML
+          </li>
+          <li>
+            <b>- IDs:</b> <code>{"#inputId {color: red}"}</code>
+          </li>
+          <li>
+            <b>- Classes:</b> <code>{".inputClass {color: red}"}</code>
+          </li>
+          <li>
+            <b>- Pseudo classes:</b>{" "}
+            <code>{"a:first-of-type {color: red}"}</code>
+          </li>
+          <li>
+            <b>- Attributes:</b>{" "}
+            <code>{"a[href='google.com'] {color: red}"}</code>
+          </li>
+          <li>
+            <b>- Elements:</b> <code>{"a {color: red}"}</code>
+          </li>
+          <li>
+            <b>- Pseudo elements:</b>{" "}
+            <code>{"a::first-letter {color: red}"}</code>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2 className="title">Lengths</h2>
+        <ul>
+          <li>
+            <b>- px</b>: pixels, absolute length
+          </li>
+          <li>
+            <b>- em:</b> Relative to font size
+          </li>
+          <li>
+            <b>- rem:</b> Relative to the root element font size
+          </li>
+          <li>
+            <b>- vw:</b> % of viewport width (screen)
+          </li>
+          <li>
+            <b>- vh:</b> % of viewport height (screen)
+          </li>
+          <li>
+            <b>- ch:</b> Width of a character (0)
+          </li>
+          <li>
+            <b>- %:</b> Percentage, usually relative to the parent value
+          </li>
+        </ul>
       </div>
     </>
   );

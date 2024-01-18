@@ -67,6 +67,18 @@ footer > span {
   font-size: 2rem;
 }
 
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
 /* Pseudo classes */
 .anchor:link {
   color: darkgoldenrod;

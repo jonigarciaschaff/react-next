@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Header from "@/components/Header/Header";
 
 export default function Html() {
@@ -110,10 +109,6 @@ export default function Html() {
           <code>{"<h2>"}</code>
         </b>
       </h2>
-      <p>
-        <b>Images:</b>
-        <Image src="/html.jpeg" alt="html" width="600" height="600" />
-      </p>
       <div>
         <b>Order List:</b>
         <ol>
