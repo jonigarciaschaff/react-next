@@ -212,6 +212,43 @@ export default function Css() {
           </li>
         </ul>
       </div>
+      <div>
+        <h2 className="title">Position</h2>
+        <div className="absolute">position absolute</div>
+        <div className="fixed">position fixed</div>
+        <div className="sticky">position sticky</div>
+      </div>
+      <div>
+        <h2 className="title">Flexbox</h2>
+        <div>
+          <b>More info:</b>{" "}
+          <a href="https://flexbox.help/">https://flexbox.help/</a>
+        </div>
+        <div className="flexbox-1">
+          <div className="red"></div>
+          <div className="blue"></div>
+          <div className="green"></div>
+        </div>
+        <div className="flexbox-2">
+          <div className="red"></div>
+          <div className="blue"></div>
+          <div className="green"></div>
+        </div>
+        <div className="flexbox-3">
+          <div className="red"></div>
+          <div className="blue"></div>
+          <div className="green"></div>
+        </div>
+        <div className="flexbox-4 ">
+          <div className="red order-1" />
+          <div className="blue order--1 basis-100" />
+          <div className="green shrink-1" />
+          <div className="red order-1 grow-2" />
+          <div className="blue order--1" />
+          <div className="green grow-1" />
+          <div className="blue flex-child" />
+        </div>
+      </div>
     </>
   );
 }

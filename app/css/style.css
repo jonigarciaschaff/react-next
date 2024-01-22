@@ -151,3 +151,118 @@ input:invalid:not(:focus) {
 .div-5::after {
   content: "!";
 }
+
+.absolute {
+  position: absolute;
+  right: 15px;
+  background-color: red;
+  z-index: 2;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 15px;
+  right: 5px;
+  background-color: aqua;
+  z-index: 1;
+}
+
+.sticky {
+  position: sticky;
+  background-color: greenyellow;
+  width: 100px;
+  bottom: 15px;
+  left: 5px;
+}
+
+.red,
+.green,
+.blue {
+  border: solid 5px black;
+  width: 100px;
+}
+
+.red {
+  background-color: red;
+  height: 100px;
+}
+
+.green {
+  background-color: green;
+  height: 80px;
+}
+
+.blue {
+  background-color: blue;
+  height: 150px;
+}
+
+.flexbox-1 {
+  border: solid 5px blueviolet;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.flexbox-2 {
+  border: solid 5px blueviolet;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.flexbox-3 {
+  border: solid 5px blueviolet;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.flexbox-4 {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  border: solid 5px blueviolet;
+  flex-wrap: wrap;
+  /* align-content only works with flex-wrap: wrap -- it aligns the lines */
+  align-content: center;
+  margin-bottom: 20px;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order--1 {
+  order: -1;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+.grow-2 {
+  flex-grow: 2;
+}
+
+.shrink-1 {
+  width: 100vw;
+  flex-shrink: 1;
+}
+
+.basis-100 {
+  flex-basis: 100px;
+}
+
+.flex-child {
+  /* 
+  flex: flex-grow flex-shrink flex-basis
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 200px;
+   */
+  flex: 1 1 200px;
+}
