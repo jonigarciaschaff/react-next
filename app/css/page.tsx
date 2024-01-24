@@ -249,6 +249,17 @@ export default function Css() {
           <div className="blue flex-child" />
         </div>
       </div>
+      <div>
+        <h2 className="title">Grid</h2>
+        <div className="grid-container">
+          <div className="grid-header">
+            <h2>HEADER</h2>
+          </div>
+          <div className="grid-main">MAIN</div>
+          <div className="grid-aside">ASIDE</div>
+          <div className="grid-footer">FOOTER</div>
+        </div>
+      </div>
     </>
   );
 }
