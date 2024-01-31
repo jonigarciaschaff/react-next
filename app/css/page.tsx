@@ -260,6 +260,24 @@ export default function Css() {
           <div className="grid-footer">FOOTER</div>
         </div>
       </div>
+      <div>
+        <h2 className="title">Inheritance</h2>
+        <div className="inheritance">
+          <h2>Title</h2>
+          <button className="inheritance-button">Click me</button>
+        </div>
+      </div>
+      <div>
+        <h2 className="title">Responsive design</h2>
+        <div className="responsive-1" />
+        <div className="responsive-2" />
+        <div className="responsive-3" />
+      </div>
+      <div>
+        <h2 className="title">Animation</h2>
+        <div className="transition">Transition</div>
+        <div className="keyframes">Keyframes</div>
+      </div>
     </>
   );
 }
