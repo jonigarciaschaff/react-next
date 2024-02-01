@@ -278,6 +278,14 @@ export default function Css() {
         <div className="transition">Transition</div>
         <div className="keyframes">Keyframes</div>
       </div>
+      <div>
+        <h2 className="title">Variables</h2>
+        <div className="box-1" />
+        <div className="box-2">
+          <div className="box-3" />
+        </div>
+        <div className="box-4" />
+      </div>
     </>
   );
 }

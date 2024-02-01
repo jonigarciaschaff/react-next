@@ -399,3 +399,33 @@ input:invalid:not(:focus) {
   animation-timing-function: steps(3);
   /* animation: myFirstAnimation 3s forwards reverse 2 runnnig steps(3); */
 }
+
+:root {
+  --color-red: red;
+  --section-width: 200px;
+  --section-height: 100px;
+}
+
+.box-2 {
+  --color-blue: blue;
+}
+
+.box-1,
+.box-3,
+.box-4 {
+  height: var(--section-height);
+  width: var(--section-width);
+}
+
+.box-1 {
+  background-color: var(--color-red);
+}
+
+.box-3 {
+  background-color: var(--color-blue);
+}
+
+.box-4 {
+  border: solid 2px black;
+  background-color: var(--color-blue);
+}
