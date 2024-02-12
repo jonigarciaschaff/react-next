@@ -10,7 +10,7 @@ export default function Header({ children }: { children: React.ReactNode }) {
     <div className="flex justify-between items-center">
       <h1 className={s.title}>{children}</h1>
       {pathname !== "/home" && (
-        <Link href="/home" className="text-blue-500">
+        <Link href="../" className="text-blue-500">
           Back
         </Link>
       )}
