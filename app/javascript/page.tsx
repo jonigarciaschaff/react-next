@@ -1,6 +1,7 @@
 "use client";
 
 import Header from "@/components/Header/Header";
+import Link from "next/link";
 
 // First-Class Functions
 //Assigning a function to a variable
@@ -127,6 +128,14 @@ export default function Home() {
               Have their own <code>this</code>, <code>arguments</code>, and
               <code>super</code> bindings.
             </span>
+          </li>
+          <li>
+            <Link
+              href="/javascript/variables-and-scoping"
+              className="text-blue-500"
+            >
+              * Variables and scoping
+            </Link>
           </li>
         </ul>
       </div>
