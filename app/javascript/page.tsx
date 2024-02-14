@@ -137,6 +137,11 @@ export default function Home() {
               * Variables and scoping
             </Link>
           </li>
+          <li>
+            <Link href="/javascript/arrays" className="text-blue-500">
+              * Arrays
+            </Link>
+          </li>
         </ul>
       </div>
     </>
