@@ -142,6 +142,11 @@ export default function Home() {
               * Arrays
             </Link>
           </li>
+          <li>
+            <Link href="/javascript/objects" className="text-blue-500">
+              * Objects
+            </Link>
+          </li>
         </ul>
       </div>
     </>
