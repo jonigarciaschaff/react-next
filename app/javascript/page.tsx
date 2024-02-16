@@ -152,6 +152,11 @@ export default function Home() {
               * Equality
             </Link>
           </li>
+          <li>
+            <Link href="/javascript/type-coercion" className="text-blue-500">
+              * Type coercion
+            </Link>
+          </li>
         </ul>
       </div>
     </>
