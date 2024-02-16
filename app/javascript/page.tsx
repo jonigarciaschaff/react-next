@@ -147,6 +147,11 @@ export default function Home() {
               * Objects
             </Link>
           </li>
+          <li>
+            <Link href="/javascript/equality" className="text-blue-500">
+              * Equality
+            </Link>
+          </li>
         </ul>
       </div>
     </>
