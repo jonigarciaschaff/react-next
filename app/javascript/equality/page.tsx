@@ -10,6 +10,8 @@ export const looseEquality = () => {
   //null == undefined // true
   //{} == {} // false
   //[] == [] // false
+  // false == 0
+  // true == 1
 };
 
 export const strictEquality = () => {
