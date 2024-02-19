@@ -157,6 +157,14 @@ export default function Home() {
               * Type coercion
             </Link>
           </li>
+          <li>
+            <Link
+              href="/javascript/modern-javascript"
+              className="text-blue-500"
+            >
+              * Modern Javascript
+            </Link>
+          </li>
         </ul>
       </div>
     </>
