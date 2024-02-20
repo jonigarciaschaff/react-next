@@ -165,6 +165,11 @@ export default function Home() {
               * Modern Javascript
             </Link>
           </li>
+          <li>
+            <Link href="/javascript/script-tag" className="text-blue-500">
+              * Script Tag
+            </Link>
+          </li>
         </ul>
       </div>
     </>
