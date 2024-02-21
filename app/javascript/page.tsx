@@ -170,6 +170,11 @@ export default function Home() {
               * Script Tag
             </Link>
           </li>
+          <li>
+            <Link href="/javascript/dom-manipulation" className="text-blue-500">
+              * Dom Manipulation
+            </Link>
+          </li>
         </ul>
       </div>
     </>
