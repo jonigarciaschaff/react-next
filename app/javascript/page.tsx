@@ -175,6 +175,11 @@ export default function Home() {
               * Dom Manipulation
             </Link>
           </li>
+          <li>
+            <Link href="/javascript/event-driven" className="text-blue-500">
+              * Event Driven
+            </Link>
+          </li>
         </ul>
       </div>
     </>
