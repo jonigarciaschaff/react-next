@@ -180,6 +180,11 @@ export default function Home() {
               * Event Driven
             </Link>
           </li>
+          <li>
+            <Link href="/javascript/promises" className="text-blue-500">
+              * Promises
+            </Link>
+          </li>
         </ul>
       </div>
     </>
