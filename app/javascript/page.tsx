@@ -185,6 +185,11 @@ export default function Home() {
               * Promises
             </Link>
           </li>
+          <li>
+            <Link href="/javascript/fetch" className="text-blue-500">
+              * Fetch
+            </Link>
+          </li>
         </ul>
       </div>
     </>
