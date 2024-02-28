@@ -190,6 +190,11 @@ export default function Home() {
               * Fetch
             </Link>
           </li>
+          <li>
+            <Link href="/javascript/timers" className="text-blue-500">
+              * Timers
+            </Link>
+          </li>
         </ul>
       </div>
     </>
