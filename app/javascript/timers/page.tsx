@@ -29,7 +29,7 @@ export const stopTimeout = () => {
 };
 
 //AnimationFrame
-// Animations are executed at the right time to avoid flickering and ensure they appear smooth.
+// Callback function is executed before every screen refresh.
 // Being synchronized with the screen refresh,
 // requestAnimationFrame can help save power by not running animations when the tab is not visible.
 
