@@ -195,6 +195,11 @@ export default function Home() {
               * Timers
             </Link>
           </li>
+          <li>
+            <Link href="/javascript/closures" className="text-blue-500">
+              * Closures
+            </Link>
+          </li>
         </ul>
       </div>
     </>
