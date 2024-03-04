@@ -200,6 +200,11 @@ export default function Home() {
               * Closures
             </Link>
           </li>
+          <li>
+            <Link href="/javascript/this" className="text-blue-500">
+              * This
+            </Link>
+          </li>
         </ul>
       </div>
     </>
